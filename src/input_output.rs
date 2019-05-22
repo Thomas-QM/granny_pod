@@ -1,5 +1,13 @@
 #[allow(non_snake_case)]
 
-pub fn inputOutput () {
+use crate::image_rec::*;
+use crate::voice_rec::*;
+
+pub fn input () {
 	
+}
+
+pub fn output () {
+	voice_rec();
+	image_rec();
 }

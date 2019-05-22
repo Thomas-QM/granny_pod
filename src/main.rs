@@ -10,12 +10,13 @@ mod declarations;
 mod input_output;
 mod image_rec;
 mod voice_rec;
-use input_output::*;
-use image_rec::*;
-use voice_rec::*;
+use crate::input_output::*;
 
 // This program is to be run on a Raspberry Pi, providing a voice interface for a Granny Pod. -Brandon
 
 fn main () {
-    
+    while true {
+		input();
+		output();
+	}
 }
