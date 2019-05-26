@@ -15,7 +15,7 @@ use crate::input_output::*;
 // This program is to be run on a Raspberry Pi, providing a voice interface for a Granny Pod. -Brandon
 
 fn main () {
-    while true {
+	loop {
 		input();
 		output();
 	}
