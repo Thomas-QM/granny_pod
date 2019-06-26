@@ -1,4 +1,5 @@
 /*
+Standard libs for i/o and random number generation
 use std::io;
 use std::cmp::Ordering;
 use rand::Rng;

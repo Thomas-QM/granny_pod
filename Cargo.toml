@@ -5,4 +5,5 @@ authors = ["Brandon C <bcline@unomaha.edu>"]
 edition = "2018"
 
 [dependencies]
-rand = "0.3.14"
+#tensorflow = "0.13.0"
+#ccv = "0.1.0"
