@@ -8,6 +8,5 @@ pub fn input () {
 }
 
 pub fn output () {
-	voice_rec();
-	image_rec();
+	
 }

@@ -11,13 +11,17 @@ mod declarations;
 mod input_output;
 mod image_rec;
 mod voice_rec;
+mod help;
 use crate::input_output::*;
+use crate::help::*;
 
 // This program is to be run on a Raspberry Pi, providing a voice interface for a Granny Pod. -Brandon
 
 fn main () {
 	loop {
 		input();
+		if help_detected { help(); }
+		else
 		output();
 	}
 }
