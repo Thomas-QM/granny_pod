@@ -24,7 +24,12 @@ pub struct State {
 }
 
 fn main () {
-	let state = State { help_detected: false, text_sent: false };
+	// structs
+	let state = State {
+		help_detected: false,
+		text_sent: false
+	};
+
 	loop {
 		input();
 		if state.help_detected {
