@@ -19,8 +19,8 @@ use crate::help::*;
 
 // global declarations
 pub struct State {
-	help_detected: bool,
-	text_sent: bool,
+	mut help_detected: bool,
+	mut text_sent: bool,
 }
 
 fn main () {
