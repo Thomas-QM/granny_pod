@@ -6,5 +6,5 @@ edition = "2018"
 
 [dependencies]
 tensorflow = "0.13.0"
-ccv = "0.1.0"
+image = "*"
 errer = "0.13.0"
