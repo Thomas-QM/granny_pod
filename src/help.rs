@@ -9,7 +9,7 @@ pub fn help () {
 	// something like:
 	state.help_detected = false;
 }
-butt
+
 pub fn text () {
 	static mut COUNT: i32 = 0; // amount of times that a text has been sent... might be useful
 
@@ -18,4 +18,7 @@ pub fn text () {
 	// once the text is sent. this will confirm that help has been
 	// called, and that help is no longer needed until "help_detected"
 	// is true
+
+	// this will need to incorporate the image hosting service
+	// as well as the text hosting service
 }
