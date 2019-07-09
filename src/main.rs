@@ -24,11 +24,13 @@ pub struct State {
 }
 
 fn main () {
-	// structs
+	// struct instantiations
 	let state = State {
 		help_detected: false,
 		text_sent: false
 	};
+
+	// maybe some declarations here but doubtful
 
 	loop {
 		input();
