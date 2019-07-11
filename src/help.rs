@@ -1,24 +1,30 @@
-
-
-pub fn help () {
-	// basically, if certain stuff happens, set the boolean "help_detected" to true,
-	// which will trigger the if statement in the main function
-
-	text(); // this function would also be called to send the text
-
-	// something like:
-	state.help_detected = false;
+struct Help {
+	detected: bool,
+	count: usize //use unsigned integers for >0 values
 }
 
-pub fn text () {
-	static mut COUNT: i32 = 0; // amount of times that a text has been sent... might be useful
+impl Help {
+	pub fn help (&mut self) {
+		// basically, if certain stuff happens, set the boolean "help_detected" to true,
+		// which will trigger the if statement in the main function
 
-	// basically code in here will send the text using a text
-	// message service, and then set the boolean "text_sent" to true
-	// once the text is sent. this will confirm that help has been
-	// called, and that help is no longer needed until "help_detected"
-	// is true
+		self.text(); // this function would also be called to send the text
 
-	// this will need to incorporate the image hosting service
-	// as well as the text hosting service
+		// something like:
+		self.help_detected = false;
+	}
+
+	pub fn text (&mut self) {
+		self.text += 1;
+
+		// basically code in here will send the text using a text
+		// message service, and then set the boolean "text_sent" to true
+		// pls stop using so many bools
+		// once the text is sent. this will confirm that help has been
+		// called, and that help is no longer needed until "help_detected"
+		// is true
+
+		// this will need to incorporate the image hosting service
+		// as well as the text hosting service
+	}
 }
