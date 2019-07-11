@@ -1,3 +1,6 @@
+extern crate errer;
+#[macro_use] extern crate errer_derive;
+
 //Standard libs for i/o
 //use std::io;
 
