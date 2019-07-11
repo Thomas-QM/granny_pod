@@ -14,31 +14,26 @@ mod input_output;
 mod image_rec;
 mod voice_rec;
 mod help;
-use crate::input_output::*;
-use crate::help::*;
 
 // global declarations
 pub struct State {
-	mut help_detected: bool,
-	mut text_sent: bool,
+	help: help::Help
 }
 
 fn main () {
 	// struct instantiations
 	let state = State {
-		help_detected: false,
-		text_sent: false
+		help: help::Help::new()
 	};
 
 	// maybe some declarations here but doubtful
 
 	loop {
 		input();
-		if state.help_detected {
-			help();
-		} else {
-
+		if state.help.detected {
+			state.help.help();
 		}
-		output();
+		
+		input_output::output();
 	}
 }
