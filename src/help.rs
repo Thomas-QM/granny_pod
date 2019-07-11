@@ -1,9 +1,14 @@
+#[derive(Debug)]
 struct Help {
 	detected: bool,
 	count: usize //use unsigned integers for >0 values
 }
 
 impl Help {
+	pub fn new() -> Self {
+		Help { detected: false, count: 0 }
+	}
+	
 	pub fn help (&mut self) {
 		// basically, if certain stuff happens, set the boolean "help_detected" to true,
 		// which will trigger the if statement in the main function
