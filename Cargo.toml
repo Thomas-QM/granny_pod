@@ -7,4 +7,6 @@ edition = "2018"
 [dependencies]
 tensorflow = "0.13.0"
 image = "*"
+
 errer = "0.13.0"
+errer_derive = "0.13.1"
