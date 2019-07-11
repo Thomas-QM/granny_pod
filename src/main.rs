@@ -1,21 +1,13 @@
-//Standard libs for i/o
-//use std::io;
-
-/**********************/
-//
-//	Written by:
-//	Brandon Cline
-//	
-/**********************/
-
 #[allow(dead_code)]
 #[allow(non_upper_case_globals)]
+
 mod input_output;
 mod image_rec;
 mod voice_rec;
 mod help;
-use crate::input_output::*;
-use crate::help::*;
+
+use input_output::*;
+use help::*;
 
 // global declarations
 pub struct State {
